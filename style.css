@@ -92,7 +92,7 @@ header {
     url("IMG/ecole.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   color: white;
   display: flex;
   flex-direction: column;
