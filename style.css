@@ -1200,6 +1200,8 @@ textarea {
   .box-activities {
     width: 100%;
     max-width: 550px;
+    text-align: center;
+    gap: 15px;
   }
 
   .box-about:hover i,
@@ -1304,9 +1306,23 @@ textarea {
     width: 100%;
   }
 
+    .get-in-touch h4,
+  .send-us h4,
+  .follow-us h4 {
+    text-align: center;
+  }
+
+  .social-media {
+    text-align: center;
+  }
+
   .follow-us {
     position: static;
     margin-top: 20px;
+  }
+
+  .box-contact {
+    justify-content: center;
   }
 
   #email {
@@ -1315,9 +1331,12 @@ textarea {
 
   form {
     flex-direction: column;
-    align-items: center;
     gap: 15px;
   }
+
+  .stay-updated form {
+    align-items: center;
+   }
 
   #btn-subscribe {
     width: 200px;
@@ -1456,6 +1475,12 @@ textarea {
   .box-academics {
     width: 100%;
     padding: 15px;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .box-activities {
+    text-align: center;
   }
 
   .box-about i,
@@ -1644,7 +1669,6 @@ textarea {
 
   form {
     flex-direction: column;
-    align-items: center;
     gap: 15px;
     padding: 0 20px;
   }
@@ -1658,6 +1682,7 @@ textarea {
   #btn-subscribe {
     width: 150px;
     padding: 12px 15px;
+    margin: auto;
   }
 
   .contact {
@@ -1678,7 +1703,11 @@ textarea {
     font-size: 16px;
   }
 
-  .send-us h4 {
+  .send-us h4 , .get-in-touch h4  {
+    text-align: center;
+  }
+
+  .social-media {
     text-align: center;
   }
 
