@@ -1,13 +1,10 @@
-// Initialize AOS
 document.addEventListener('DOMContentLoaded', function() {
     AOS.init({
-        duration: 800,
+        duration: window.innerWidth < 768 ? 500 : 800,
         easing: 'ease-in-out',
         once: true,
-        offset: 100,
-        disable: function() {
-            return window.innerWidth < 768;
-        }
+        offset: window.innerWidth < 768 ? 50 : 100, 
+        disable: false
     });
 });
 
