@@ -20,6 +20,9 @@ let boxFaculty = document.querySelectorAll('.box-faculty1');
 let btnReviews = document.getElementById('btn-reviews');
 let boxReviews = document.querySelectorAll('.box-reviews1');
 
+let scrollToTopBtn = document.getElementById('scrollToTop');
+
+
 bars.addEventListener("click" , () => {
     if (navbar.style.display === "none" || navbar.style.display === "") {
         bars.classList.remove('fa-bars');
@@ -79,4 +82,20 @@ btnReviews.addEventListener("click", () => {
         });
         
     }
+});
+
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('show');
+    } else {
+        scrollToTopBtn.classList.remove('show');
+    }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
