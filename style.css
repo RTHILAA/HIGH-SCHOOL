@@ -1105,6 +1105,34 @@ textarea {
   text-decoration: underline;
 }
 
+.scroll-top-btn {
+    position: fixed;
+    bottom: 7px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    z-index: 1000;
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top-btn:hover {
+    background-color: #1d4ed8;
+}
+
 @media (min-width: 481px) and (max-width: 949px) {
   .content {
     background-attachment: scroll;
@@ -1357,6 +1385,16 @@ textarea {
     gap: 15px;
     text-align: center;
   }
+}
+
+@media (max-width: 768px) {
+    .scroll-top-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 480px) {
