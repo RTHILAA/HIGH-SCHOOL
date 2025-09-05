@@ -147,7 +147,7 @@ The website uses CSS custom properties for easy color customization. Main colors
 - Edge
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## ⚡ Performance Features
+## ⚡ Performance Features :
 
 - Optimized CSS with efficient selectors
 - Lazy loading animations with AOS
@@ -165,7 +165,7 @@ The website includes three responsive breakpoints:
 
 Each breakpoint includes optimized layouts, font sizes, and interaction patterns.
 
-## ♿ Accessibility Features
+## ♿ Accessibility Features :
 
 - Semantic HTML structure
 - Alt text for images
@@ -174,7 +174,7 @@ Each breakpoint includes optimized layouts, font sizes, and interaction patterns
 - Screen reader friendly markup
 - Focus indicators for interactive elements
 
-## 🧪 Development Notes
+## 🧪 Development Notes :
 
 ### JavaScript Features
 - Mobile-friendly hamburger menu
@@ -190,7 +190,7 @@ Each breakpoint includes optimized layouts, font sizes, and interaction patterns
 - Mobile-first responsive design
 - CSS transforms for interactive elements
 
-## 🤝 Contributing
+## 🤝 Contributing :
 
 To contribute to this project:
 
