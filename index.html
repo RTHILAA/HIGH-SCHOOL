@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>RTHILAA | High School</title>
 </head>
@@ -15,14 +17,14 @@
     <!-- START NAVBAR -->
     <header>
         <nav class="navbar">
-            <h3><a href="#">RTHILAA</a></h3>
-            <i id="bars" class="fa-solid fa-bars"></i>
+            <h3><a href="#" data-aos="fade-right">RTHILAA</a></h3>
+            <i id="bars" class="fa-solid fa-bars" data-aos="fade-left"></i>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#academics">Academics</a></li>
-                <li><a href="#activities">Activities</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" data-aos="fade-down" data-aos-delay="100">Home</a></li>
+                <li><a href="#about" data-aos="fade-down" data-aos-delay="200">About</a></li>
+                <li><a href="#academics" data-aos="fade-down" data-aos-delay="300">Academics</a></li>
+                <li><a href="#activities" data-aos="fade-down" data-aos-delay="400">Activities</a></li>
+                <li><a href="#contact" data-aos="fade-down" data-aos-delay="500">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -30,12 +32,12 @@
 
     <!-- START CONTENT -->
     <div class="content">
-        <h2>Welcome to Rthilaa High School</h2>
-        <p>
+        <h2 data-aos="fade-right" data-aos-delay="300">Welcome to Rthilaa High School</h2>
+        <p data-aos="fade-left" data-aos-delay="500">
             Preparing students for success in college, career, and life through
             rigorous academics and character development.
         </p>
-        <div class="btn-more-contact">
+        <div class="btn-more-contact" data-aos="zoom-in" data-aos-delay="700">
             <a href="#about" id="btn-more">Learn More</a>
             <a href="#contact" id="btn-contact">Contact Us</a>
         </div>
@@ -44,14 +46,14 @@
 
     <!-- START ABOUT -->
     <div class="about" id="about">
-        <h3 id="title-about">About Our School</h3>
-        <div class="border"></div>
-        <p id="paragraph-about">
+        <h3 id="title-about" data-aos="fade-down">About Our School</h3>
+        <div class="border" data-aos="zoom-in"></div>
+        <p id="paragraph-about" data-aos="fade-up" data-aos-delay="200">
             Founded in 1995, Rthilaa High School has been providing quality
             education to students in our community for over 25 years.
         </p>
         <div class="boxes">
-            <div class="box-about">
+            <div class="box-about" data-aos="fade-up" data-aos-delay="100">
                 <i class="fa fa-graduation-cap"></i>
                 <h4>Our Mission</h4>
                 <p>
@@ -59,7 +61,7 @@
                     character, and become responsible global citizens.
                 </p>
             </div>
-            <div class="box-about">
+            <div class="box-about" data-aos="fade-up" data-aos-delay="200">
                 <i class="fa fa-chart-line"></i>
                 <h4>Our Achievements</h4>
                 <p>
@@ -67,7 +69,7 @@
                     in the top 10% of high schools statewide.
                 </p>
             </div>
-            <div class="box-about">
+            <div class="box-about" data-aos="fade-up" data-aos-delay="300">
                 <i class="fas fa-users"></i>
                 <h4>Our Community</h4>
                 <p>
@@ -78,8 +80,8 @@
         </div>
 
         <div class="campus">
-            <img src="IMG/about.jpg" alt="about.jpg" />
-            <div class="our-campus">
+            <img src="IMG/about.jpg" alt="about.jpg" data-aos="fade-right" />
+            <div class="our-campus" data-aos="fade-left">
                 <h4>Our Campus</h4>
                 <p>
                     Our 25 acre campus features state of the art facilities, including
@@ -110,14 +112,14 @@
 
     <!-- START ACADEMICS -->
     <div class="academics" id="academics">
-        <h3 id="title-academic">Academic Programs</h3>
-        <div class="border"></div>
-        <p id="paragraph-academic">
+        <h3 id="title-academic" data-aos="fade-down">Academic Programs</h3>
+        <div class="border" data-aos="zoom-in"></div>
+        <p id="paragraph-academic" data-aos="fade-up" data-aos-delay="200">
             We offer a comprehensive curriculum designed to challenge students and
             prepare them for higher education.
         </p>
         <div class="boxes">
-            <div class="box-academics">
+            <div class="box-academics" data-aos="flip-left" data-aos-delay="100">
                 <i class="fa-solid fa-gear"></i>
                 <h4>STEM</h4>
                 <p>
@@ -126,7 +128,7 @@
                 </p>
                 <a href="#">Learn more →</a>
             </div>
-            <div class="box-academics">
+            <div class="box-academics" data-aos="flip-left" data-aos-delay="200">
                 <i class="fa-solid fa-paintbrush"></i>
                 <h4>Arts</h4>
                 <p>
@@ -135,7 +137,7 @@
                 </p>
                 <a href="#">Learn more →</a>
             </div>
-            <div class="box-academics">
+            <div class="box-academics" data-aos="flip-left" data-aos-delay="300">
                 <i class="fas fa-scroll"></i>
                 <h4>Humanities</h4>
                 <p>
@@ -144,7 +146,7 @@
                 </p>
                 <a href="#">Learn more →</a>
             </div>
-            <div class="box-academics">
+            <div class="box-academics" data-aos="flip-left" data-aos-delay="400">
                 <i class="fas fa-person-running"></i>
                 <h4>Athletics</h4>
                 <p>
@@ -156,7 +158,7 @@
         </div>
 
         <div class="advanced-program">
-            <div class="advanced-placement-program">
+            <div class="advanced-placement-program" data-aos="fade-right">
                 <h4>Advanced Placement Program</h4>
                 <p>
                     We offer 18 Advanced Placement courses across various disciplines,
@@ -164,32 +166,32 @@
                     in high school.
                 </p>
                 <div class="box-advanced-program">
-                    <div class="box-advanced-placement">
+                    <div class="box-advanced-placement" data-aos="zoom-in" data-aos-delay="100">
                         <span>92%</span>
                         <p>Pass rate on AP exams</p>
                     </div>
-                    <div class="box-advanced-placement">
+                    <div class="box-advanced-placement" data-aos="zoom-in" data-aos-delay="200">
                         <span>18</span>
                         <p>AP courses offered</p>
                     </div>
                 </div>
                 <a href="#" id="btn-ap">View AP Courses</a>
             </div>
-            <img src="IMG/academics.jpg" alt="academics.jpg" />
+            <img src="IMG/academics.jpg" alt="academics.jpg" data-aos="fade-left" />
         </div>
     </div>
     <!-- END ACADEMICS -->
 
     <!-- START ACTIVITIES -->
     <div class="activities" id="activities">
-        <h3 id="title-activities">Student Activities</h3>
-        <div class="border"></div>
-        <p id="paragraph-activities">
+        <h3 id="title-activities" data-aos="fade-down">Student Activities</h3>
+        <div class="border" data-aos="zoom-in"></div>
+        <p id="paragraph-activities" data-aos="fade-up" data-aos-delay="200">
             We encourage students to explore their interests and develop leadership
             skills through our diverse extracurricular programs.
         </p>
         <div class="boxes">
-            <div class="box-activities">
+            <div class="box-activities" data-aos="zoom-in" data-aos-delay="100">
                 <img src="IMG/clubs.jpg" alt="clubs.jpg" />
                 <h4>Clubs & Organizations</h4>
                 <p>
@@ -198,7 +200,7 @@
                 </p>
                 <a href="#">View All Clubs →</a>
             </div>
-            <div class="box-activities">
+            <div class="box-activities" data-aos="zoom-in" data-aos-delay="200">
                 <img src="IMG/Athletics.jpg" alt="Athletics.jpg" />
                 <h4>Athletics</h4>
                 <p>
@@ -207,7 +209,7 @@
                 </p>
                 <a href="#">Sports Schedules →</a>
             </div>
-            <div class="box-activities">
+            <div class="box-activities" data-aos="zoom-in" data-aos-delay="300">
                 <img src="IMG/Arts.jpg" alt="Arts.jpg" />
                 <h4>Performing Arts</h4>
                 <p>
@@ -222,10 +224,10 @@
 
     <!-- START EVENTS -->
     <div class="events">
-        <h4 id="title-events">Upcoming Events</h4>
-        <div class="border"></div>
+        <h4 id="title-events" data-aos="fade-down">Upcoming Events</h4>
+        <div class="border" data-aos="zoom-in"></div>
         <div class="boxes">
-            <div class="box-events">
+            <div class="box-events" data-aos="fade-up" data-aos-delay="100">
                 <div class="info">
                     <div class="date">
                         <span>15</span>
@@ -242,7 +244,7 @@
                 </p>
                 <a href="#">Learn more →</a>
             </div>
-            <div class="box-events">
+            <div class="box-events" data-aos="fade-up" data-aos-delay="200">
                 <div class="info">
                     <div class="date">
                         <span>22</span>
@@ -258,7 +260,7 @@
                 </p>
                 <a href="#">Learn more →</a>
             </div>
-            <div class="box-events">
+            <div class="box-events" data-aos="fade-up" data-aos-delay="300">
                 <div class="info">
                     <div class="date">
                         <span>28</span>
@@ -275,7 +277,7 @@
                 </p>
                 <a href="#">Learn more →</a>
             </div>
-            <div class="box-events1">
+            <div class="box-events1" data-aos="fade-up" data-aos-delay="400">
                 <div class="info">
                     <div class="date">
                         <span>4</span>
@@ -292,7 +294,7 @@
                 </p>
                 <a href="#">Learn more →</a>
             </div>
-            <div class="box-events1">
+            <div class="box-events1" data-aos="fade-up" data-aos-delay="500">
                 <div class="info">
                     <div class="date">
                         <span>12</span>
@@ -309,7 +311,7 @@
                 </p>
                 <a href="#">Learn more →</a>
             </div>
-            <div class="box-events1">
+            <div class="box-events1" data-aos="fade-up" data-aos-delay="600">
                 <div class="info">
                     <div class="date">
                         <span>18</span>
@@ -327,19 +329,19 @@
                 <a href="#">Learn more →</a>
             </div>
         </div>
-        <button id="btn-events">View All Events</button>
+        <button id="btn-events" data-aos="zoom-in">View All Events</button>
     </div>
     <!-- END EVENTS -->
 
     <!-- START FACULTY -->
     <div class="faculty">
-        <h4 id="title-faculty">Meet Our Faculty</h4>
-        <div class="border"></div>
-        <p id="paragraph-faculty">
+        <h4 id="title-faculty" data-aos="fade-down">Meet Our Faculty</h4>
+        <div class="border" data-aos="zoom-in"></div>
+        <p id="paragraph-faculty" data-aos="fade-up" data-aos-delay="200">
             Meet the talented faculty members who inspire and educate our students.
         </p>
         <div class="boxes">
-            <div class="box-faculty">
+            <div class="box-faculty" data-aos="flip-up" data-aos-delay="100">
                 <img src="IMG/biology.jpg" alt="biology.jpg" />
                 <span>Dr. Sarah Johnson – Biology</span>
                 <p>
@@ -348,7 +350,7 @@
                     sciences with curiosity and depth.
                 </p>
             </div>
-            <div class="box-faculty">
+            <div class="box-faculty" data-aos="flip-up" data-aos-delay="200">
                 <img src="IMG/Mathematics.jpg" alt="Mathematics.jpg" />
                 <span>Mr. James Wilson – Mathematics</span>
                 <p>
@@ -357,7 +359,7 @@
                     simple.
                 </p>
             </div>
-            <div class="box-faculty">
+            <div class="box-faculty" data-aos="flip-up" data-aos-delay="300">
                 <img src="IMG/Computer Science.jpg" alt="Computer Science.jpg" />
                 <span>Mr. Ahmed Rahimi – Computer Science</span>
                 <p>
@@ -365,7 +367,7 @@
                     algorithms, and the future of technology in a fun and engaging way.
                 </p>
             </div>
-            <div class="box-faculty">
+            <div class="box-faculty" data-aos="flip-up" data-aos-delay="400">
                 <img src="IMG/english.jpg" alt="english.jpg" />
                 <span>Ms. Emily Rodriguez – English Literature</span>
                 <p>
@@ -374,16 +376,16 @@
                     creatively.
                 </p>
             </div>
-            <div class="box-faculty1">
+            <div class="box-faculty1" data-aos="flip-up" data-aos-delay="500">
                 <img src="IMG/chemistry.jpg" alt="chemistry.jpg" />
                 <span>Dr. Mark Thompson – Chemistry</span>
                 <p>
-                    Dr. Thompson’s love for chemistry is contagious. He motivates
+                    Dr. Thompson's love for chemistry is contagious. He motivates
                     students through hands-on labs and real-life examples of chemical
                     reactions.
                 </p>
             </div>
-            <div class="box-faculty1">
+            <div class="box-faculty1" data-aos="flip-up" data-aos-delay="600">
                 <img src="IMG/History.jpg" alt="History.jpg" />
                 <span>Mrs. Olivia Bennett – History</span>
                 <p>
@@ -392,7 +394,7 @@
                     present.
                 </p>
             </div>
-            <div class="box-faculty1">
+            <div class="box-faculty1" data-aos="flip-up" data-aos-delay="700">
                 <img src="IMG/French.jpg" alt="French.jpg" />
                 <span>Ms. Amina El-Mansouri – French Language</span>
                 <p>
@@ -401,7 +403,7 @@
                     confidence.
                 </p>
             </div>
-            <div class="box-faculty1">
+            <div class="box-faculty1" data-aos="flip-up" data-aos-delay="800">
                 <img src="IMG/Physics.jpg" alt="Physics.jpg" />
                 <span>Mr. David Chen – Physics</span>
                 <p>
@@ -410,16 +412,16 @@
                 </p>
             </div>
         </div>
-        <button id="btn-faculty">View All Faculty</button>
+        <button id="btn-faculty" data-aos="zoom-in">View All Faculty</button>
     </div>
     <!-- END FACULTY -->
 
     <!-- START STUDENTS SAY -->
     <div class="students-say">
-        <h4 id="title-students-say">What Our Students Say</h4>
-        <div class="border"></div>
+        <h4 id="title-students-say" data-aos="fade-down">What Our Students Say</h4>
+        <div class="border" data-aos="zoom-in"></div>
         <div class="boxes">
-            <div class="box-reviews">
+            <div class="box-reviews" data-aos="zoom-in" data-aos-delay="100">
                 <img src="IMG/student-girl1.jpg" alt="" />
                 <span>Olivia Reed</span>
                 <div class="stars">
@@ -434,7 +436,7 @@
                     feel ready for whatever comes next."
                 </p>
             </div>
-            <div class="box-reviews">
+            <div class="box-reviews" data-aos="zoom-in" data-aos-delay="200">
                 <img src="IMG/student-girl2.jpg" alt="" />
                 <span>Emily Carter</span>
                 <div class="stars">
@@ -449,7 +451,7 @@
                     confidence to lead group projects with ease."
                 </p>
             </div>
-            <div class="box-reviews">
+            <div class="box-reviews" data-aos="zoom-in" data-aos-delay="300">
                 <img src="IMG/student-boy3.jpg" alt="" />
                 <span>Liam Parker</span>
                 <div class="stars">
@@ -460,11 +462,11 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <p>
-                    "The mentorship program totally changed my approach to learning. I’m
+                    "The mentorship program totally changed my approach to learning. I'm
                     way more focused and organized now."
                 </p>
             </div>
-            <div class="box-reviews">
+            <div class="box-reviews" data-aos="zoom-in" data-aos-delay="400">
                 <img src="IMG/student-boy2.jpg" alt="" />
                 <span>Mason Rivera</span>
                 <div class="stars">
@@ -475,11 +477,11 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <p>
-                    "Rthilaa High isn’t just about grades. It’s about growth, support,
-                    and real-life skills I’ll use forever."
+                    "Rthilaa High isn't just about grades. It's about growth, support,
+                    and real-life skills I'll use forever."
                 </p>
             </div>
-            <div class="box-reviews1">
+            <div class="box-reviews1" data-aos="zoom-in" data-aos-delay="500">
                 <img src="IMG/student-boy1.jpg" alt="" />
                 <span>Noah Mitchell</span>
                 <div class="stars">
@@ -491,10 +493,10 @@
                 </div>
                 <p>
                     "I love how the teachers here actually take time to explain things.
-                    I’ve never felt more supported in class."
+                    I've never felt more supported in class."
                 </p>
             </div>
-            <div class="box-reviews1">
+            <div class="box-reviews1" data-aos="zoom-in" data-aos-delay="600">
                 <img src="IMG/student-boy4.jpg" alt="" />
                 <span>Ethan Collins</span>
                 <div class="stars">
@@ -509,7 +511,7 @@
                     problem-solving in real situations."
                 </p>
             </div>
-            <div class="box-reviews1">
+            <div class="box-reviews1" data-aos="zoom-in" data-aos-delay="700">
                 <img src="IMG/student-girl3.jpg" alt="" />
                 <span>Ava Thompson</span>
                 <div class="stars">
@@ -520,11 +522,11 @@
                     <i class="fa-regular fa-star"></i>
                 </div>
                 <p>
-                    "From sports to music club, there’s something for everyone. I’ve
+                    "From sports to music club, there's something for everyone. I've
                     learned so much beyond the classroom."
                 </p>
             </div>
-            <div class="box-reviews1">
+            <div class="box-reviews1" data-aos="zoom-in" data-aos-delay="800">
                 <img src="IMG/student-girl4.jpg" alt="" />
                 <span>Sophia Bennett</span>
                 <div class="stars">
@@ -540,24 +542,24 @@
                 </p>
             </div>
         </div>
-        <button id="btn-reviews">View All Reviews</button>
+        <button id="btn-reviews" data-aos="zoom-in">View All Reviews</button>
     </div>
     <!-- END STUDENTS SAY -->
 
 
     <!-- START STAY UPDATED -->
     <div class="stay-updated">
-        <h4 id="title-stay-updated">Stay Updated</h4>
-        <div class="border"></div>
-        <p class="paragraph-stay-updated">
+        <h4 id="title-stay-updated" data-aos="fade-down">Stay Updated</h4>
+        <div class="border" data-aos="zoom-in"></div>
+        <p class="paragraph-stay-updated" data-aos="fade-up" data-aos-delay="200">
             Subscribe to our newsletter for the latest news and events from Rthilaa
             High School.
         </p>
-        <form method="get">
+        <form method="get" data-aos="zoom-in" data-aos-delay="400">
             <input type="email" id="email" placeholder="Enter your email" required />
             <button type="submit" id="btn-subscribe">Subscribe</button>
         </form>
-        <p class="paragraph-stay-updated">
+        <p class="paragraph-stay-updated" data-aos="fade-up" data-aos-delay="600">
             We respect your privacy. Unsubscribe at any time.
         </p>
     </div>
@@ -565,14 +567,14 @@
 
     <!-- START CONTACT -->
     <div class="contact-us" id="contact">
-        <h4 id="title-contact">Contact Us</h4>
-        <div class="border"></div>
-        <p id="paragraph-contact">
+        <h4 id="title-contact" data-aos="fade-down">Contact Us</h4>
+        <div class="border" data-aos="zoom-in"></div>
+        <p id="paragraph-contact" data-aos="fade-up" data-aos-delay="200">
             We'd love to hear from you! Reach out with any questions or to schedule
             a visit.
         </p>
         <div class="contact">
-            <div class="get-in-touch">
+            <div class="get-in-touch" data-aos="fade-right">
                 <h4>Get in Touch</h4>
                 <div class="box-contact">
                     <i class="fa-solid fa-location-dot"></i>
@@ -602,7 +604,7 @@
                 </div>
             </div>
 
-            <div class="send-us">
+            <div class="send-us" data-aos="fade-left">
                 <h4>Send Us a Message</h4>
                 <form method="get" class="form-contact">
                     <label for="name">Name:</label>
@@ -623,7 +625,7 @@
     <!-- START FOOTER -->
     <div class="footer">
         <div class="footer-columns">
-            <div class="Rthilaa-high">
+            <div class="Rthilaa-high" data-aos="fade-up" data-aos-delay="100">
                 <h4>Rthilaa High School</h4>
                 <p>
                     Preparing students for success in college, career, and life through
@@ -631,7 +633,7 @@
                 </p>
             </div>
 
-            <div class="quick-link">
+            <div class="quick-link" data-aos="fade-up" data-aos-delay="200">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -642,7 +644,7 @@
                 </ul>
             </div>
 
-            <div class="resources">
+            <div class="resources" data-aos="fade-up" data-aos-delay="300">
                 <h4>Resources</h4>
                 <ul>
                     <li><a href="#">Calendar</a></li>
@@ -653,15 +655,15 @@
                 </ul>
             </div>
 
-            <div class="contact-info">
+            <div class="contact-info" data-aos="fade-up" data-aos-delay="400">
                 <h4>Contact Info</h4>
                 <p>123 Street, City, Country</p>
                 <p>Phone: (123) 456-7890</p>
                 <p>Email: info@rthilaahigh.edu</p>
             </div>
         </div>
-        <div class="copy-social-media">
-            <div class="copyright">
+        <div class="copy-social-media" data-aos="fade-left">
+            <div class="copyright" >
                 <p>&copy; 2025 Rthilaa High School All rights reserved</p>
                 <p>Developed by : <a href="https://www.instagram.com/a.elharazi/">ANASS EL HARAZI</a></p>
             </div>
@@ -674,6 +676,9 @@
         </div>
     </div>
     <!-- END FOOTER -->
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 
