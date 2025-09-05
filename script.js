@@ -1,3 +1,16 @@
+// Initialize AOS
+document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100,
+        disable: function() {
+            return window.innerWidth < 768;
+        }
+    });
+});
+
 let bars = document.getElementById('bars');
 let navbar = document.querySelector('.navbar ul');
 
