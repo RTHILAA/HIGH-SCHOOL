@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
-html, body {
+html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #2563eb #ffffff;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 body {
@@ -22,7 +22,7 @@ header {
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.95);
   transition: all 0.3s ease;
-  max-width: 100%;
+  width: 100%;
   z-index: 100;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -40,7 +40,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  max-width: 90%;
+  width: 90%;
   margin: auto;
   position: relative;
 }
@@ -69,7 +69,7 @@ header {
 .navbar li a::after {
   content: "";
   position: absolute;
-  max-width: 0;
+  width: 0;
   height: 2px;
   bottom: -1px;
   left: 0;
@@ -78,7 +78,7 @@ header {
 }
 
 .navbar li a:hover::after {
-  max-width: 100%;
+  width: 100%;
 }
 
 .navbar li a:hover {
@@ -129,16 +129,16 @@ header {
 
 @keyframes typing {
   from {
-    max-width: 0;
+    width: 0;
   }
 
   to {
-    max-width: 50%;
+    width: 50%;
   }
 }
 
 .content p {
-  max-width: 70%;
+  width: 70%;
   text-align: center;
   line-height: 1.6;
   font-size: 22px;
@@ -289,7 +289,7 @@ header {
 }
 
 .border {
-  max-width: 200px;
+  width: 200px;
   height: 3px;
   background-color: #2563eb;
   margin: 5px auto;
@@ -304,7 +304,7 @@ header {
   position: absolute;
   top: 0;
   left: -100%;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   background: linear-gradient(
     90deg,
@@ -330,7 +330,7 @@ header {
 #paragraph-activities,
 #paragraph-faculty,
 #paragraph-contact {
-  max-width: 70%;
+  width: 70%;
   text-align: center;
   line-height: 1.6;
   font-size: 18px;
@@ -341,7 +341,7 @@ header {
 
 .boxes {
   display: flex;
-  max-width: 95%;
+  width: 95%;
   margin: auto;
   gap: 20px;
 }
@@ -351,7 +351,7 @@ header {
   background-color: #f9fafb;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
+  width: 500px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -385,7 +385,7 @@ header {
   position: absolute;
   top: 0;
   left: -100%;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   background: linear-gradient(
     90deg,
@@ -436,7 +436,7 @@ header {
 }
 
 .campus img {
-  max-width: 50%;
+  width: 50%;
   height: 60vh;
   object-fit: cover;
   border-radius: 10px;
@@ -453,7 +453,7 @@ header {
 
 .campus {
   display: flex;
-  max-width: 95%;
+  width: 95%;
   margin: auto;
   margin-top: 50px;
   animation: slideInLeft 0.8s ease-out;
@@ -535,7 +535,7 @@ header {
 
 .advanced-program {
   display: flex;
-  max-width: 95%;
+  width: 95%;
   margin: auto;
   margin-top: 50px;
   padding: 20px;
@@ -557,7 +557,7 @@ header {
 }
 
 .advanced-program img {
-  max-width: 80%;
+  width: 80%;
   height: 40vh;
   object-fit: cover;
   border-radius: 10px;
@@ -580,7 +580,7 @@ header {
   background-color: #eff6ff;
   padding: 15px;
   border-radius: 10px;
-  max-width: 300px;
+  width: 300px;
 }
 
 .box-advanced-placement span {
@@ -610,7 +610,7 @@ header {
   background-color: #f9fafb;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -620,7 +620,7 @@ header {
 }
 
 .box-activities img {
-  max-width: 100%;
+  width: 100%;
   height: 35vh;
   object-fit: cover;
   border-radius: 10px;
@@ -655,7 +655,7 @@ header {
 .students-say .boxes {
   display: flex;
   gap: 20px;
-  max-width: 95%;
+  width: 95%;
   margin: auto;
   flex-wrap: wrap;
 }
@@ -732,7 +732,7 @@ header {
 
 .box-faculty,
 .box-faculty1 {
-  max-width: calc(25% - 20px);
+  width: calc(25% - 20px);
   background-color: #ffffff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -747,7 +747,7 @@ header {
 
 .box-faculty img,
 .box-faculty1 img {
-  max-width: 100%;
+  width: 100%;
   height: 35vh;
   object-fit: cover;
   border-radius: 10px;
@@ -786,7 +786,7 @@ header {
 
 .box-reviews,
 .box-reviews1 {
-  max-width: calc(25% - 20px);
+  width: calc(25% - 20px);
   background-color: #f9fafb;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -869,7 +869,7 @@ form {
 
 #email {
   padding: 15px;
-  max-width: 30%;
+  width: 30%;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -897,7 +897,7 @@ form {
 }
 
 #paragraph-contact {
-  max-width: 100%;
+  width: 100%;
 }
 
 .contact {
@@ -957,7 +957,7 @@ textarea {
 
 .send-us input,
 .send-us textarea {
-  max-width: 100%;
+  width: 100%;
   padding: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
@@ -979,7 +979,7 @@ textarea {
 }
 
 #btn-send {
-  max-width: 100%;
+  width: 100%;
   background-color: #007bff;
   color: white;
   padding: 15px;
@@ -1071,7 +1071,7 @@ textarea {
 .footer li a::after {
   content: "";
   position: absolute;
-  max-width: 0;
+  width: 0;
   height: 2px;
   bottom: -1px;
   left: 0;
@@ -1080,7 +1080,7 @@ textarea {
 }
 
 .footer li a:hover::after {
-  max-width: 100%;
+  width: 100%;
 }
 
 .footer li a:hover {
@@ -1124,7 +1124,7 @@ textarea {
   position: fixed;
   bottom: 7px;
   right: 20px;
-  max-width: 50px;
+  width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #2563eb;
@@ -1148,7 +1148,7 @@ textarea {
   background-color: #1d4ed8;
 }
 
-@media (min-max-width: 481px) and (max-max-width: 949px) {
+@media (min-width: 481px) and (max-width: 949px) {
   body {
     overflow-x: hidden;
   }
@@ -1172,7 +1172,7 @@ textarea {
     position: absolute;
     top: 10vh;
     left: 0;
-    max-width: 100%;
+    width: 100%;
     background-color: #1e1e1e;
     padding: 20px 0;
     gap: 15px;
@@ -1204,23 +1204,23 @@ textarea {
 
   .content h2 {
     font-size: 34px;
-    max-width: 100%;
+    width: 100%;
     animation: typing 3s steps(30) 1s both;
   }
 
   @keyframes typing {
     from {
-      max-width: 0;
+      width: 0;
     }
 
     to {
-      max-width: 100%;
+      width: 100%;
     }
   }
 
   .content p {
     font-size: 26px;
-    max-width: 80%;
+    width: 80%;
   }
 
   .btn-more-contact {
@@ -1232,7 +1232,7 @@ textarea {
 
   #btn-more,
   #btn-contact {
-    max-width: 200px;
+    width: 200px;
     text-align: center;
   }
 
@@ -1241,20 +1241,20 @@ textarea {
   #paragraph-activities,
   #paragraph-faculty,
   #paragraph-contact {
-    max-width: 85%;
+    width: 85%;
     font-size: 18px;
   }
 
   .boxes {
     flex-direction: column;
     align-items: center;
-    max-width: 90%;
+    width: 90%;
   }
 
   .box-about,
   .box-academics,
   .box-activities {
-    max-width: 100%;
+    width: 100%;
     max-width: 550px;
     text-align: center;
     gap: 15px;
@@ -1268,36 +1268,36 @@ textarea {
 
   .campus {
     flex-direction: column-reverse;
-    max-width: 90%;
+    width: 90%;
     gap: 30px;
   }
 
   .campus img {
-    max-width: 95%;
+    width: 95%;
     height: 40vh;
     margin: auto;
   }
 
   .our-campus {
-    max-width: 100%;
+    width: 100%;
     align-items: center;
     text-align: center;
   }
 
   .advanced-program {
     flex-direction: column;
-    max-width: 100%;
+    width: 100%;
     gap: 30px;
   }
 
   .advanced-program img {
-    max-width: 95%;
+    width: 95%;
     height: 40vh;
     margin: auto;
   }
 
   .advanced-placement-program {
-    max-width: 100%;
+    width: 100%;
     align-items: center;
     text-align: center;
   }
@@ -1308,7 +1308,7 @@ textarea {
   }
 
   .box-advanced-placement {
-    max-width: 250px;
+    width: 250px;
   }
 
   .box-activities img,
@@ -1322,30 +1322,30 @@ textarea {
   .students-say .boxes {
     flex-direction: column;
     align-items: center;
-    max-width: 90%;
+    width: 90%;
   }
 
   .box-events,
   .box-events1 {
-    max-width: 100%;
+    width: 100%;
     max-width: 550px;
   }
 
   .box-faculty,
   .box-faculty1 {
-    max-width: 100%;
+    width: 100%;
     max-width: 550px;
   }
 
   .box-reviews,
   .box-reviews1 {
-    max-width: 100%;
+    width: 100%;
     max-width: 550px;
   }
 
   .box-reviews img,
   .box-reviews1 img {
-    max-width: 30vh;
+    width: 30vh;
     height: 30vh;
     border-radius: 50%;
     margin: 0 auto;
@@ -1359,7 +1359,7 @@ textarea {
 
   .get-in-touch,
   .send-us {
-    max-width: 100%;
+    width: 100%;
   }
 
   .get-in-touch h4,
@@ -1382,7 +1382,7 @@ textarea {
   }
 
   #email {
-    max-width: 60%;
+    width: 60%;
   }
 
   form {
@@ -1395,7 +1395,7 @@ textarea {
   }
 
   #btn-subscribe {
-    max-width: 200px;
+    width: 200px;
   }
 
   .footer-columns {
@@ -1415,13 +1415,13 @@ textarea {
   }
 }
 
-@media (min-max-width: 950px) {
+@media (min-width: 950px) {
   .dark-mode-toggle.mobile {
     display: none;
   }
 }
 
-@media (max-max-width: 949px) {
+@media (max-width: 949px) {
   .dark-mode-toggle:not(.mobile) {
     display: none;
   }
@@ -1431,17 +1431,17 @@ textarea {
   }
 }
 
-@media (max-max-width: 768px) {
+@media (max-width: 768px) {
   .scroll-top-btn {
     bottom: 20px;
     right: 20px;
-    max-width: 50px;
+    width: 50px;
     height: 50px;
     font-size: 16px;
   }
 }
 
-@media (max-max-width: 480px) {
+@media (max-width: 480px) {
   body {
     overflow-x: hidden;
   }
@@ -1450,7 +1450,7 @@ textarea {
     background-attachment: scroll;
   }
   .navbar {
-    max-width: 95%;
+    width: 95%;
     height: 8vh;
   }
 
@@ -1470,7 +1470,7 @@ textarea {
     position: absolute;
     top: 8vh;
     left: 0;
-    max-width: 100%;
+    width: 100%;
     background-color: #1e1e1e;
     padding: 15px 0;
     gap: 12px;
@@ -1495,22 +1495,22 @@ textarea {
 
   .content h2 {
     font-size: 20px;
-    max-width: 100%;
+    width: 100%;
   }
 
   @keyframes typing {
     from {
-      max-width: 0;
+      width: 0;
     }
 
     to {
-      max-width: 100%;
+      width: 100%;
     }
   }
 
   .content p {
     font-size: 16px;
-    max-width: 90%;
+    width: 90%;
   }
 
   .btn-more-contact {
@@ -1518,12 +1518,12 @@ textarea {
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
   }
 
   #btn-more,
   #btn-contact {
-    max-width: 180px;
+    width: 180px;
     text-align: center;
     padding: 12px 20px;
     font-size: 14px;
@@ -1543,7 +1543,7 @@ textarea {
   }
 
   .border {
-    max-width: 150px;
+    width: 150px;
   }
 
   #paragraph-about,
@@ -1551,7 +1551,7 @@ textarea {
   #paragraph-activities,
   #paragraph-faculty,
   #paragraph-contact {
-    max-width: 90%;
+    width: 90%;
     font-size: 16px;
     padding: 0 10px;
   }
@@ -1559,13 +1559,13 @@ textarea {
   .boxes {
     flex-direction: column;
     align-items: center;
-    max-width: 95%;
+    width: 95%;
     gap: 20px;
   }
 
   .box-about,
   .box-academics {
-    max-width: 100%;
+    width: 100%;
     padding: 15px;
     text-align: center;
     gap: 15px;
@@ -1593,18 +1593,18 @@ textarea {
 
   .campus {
     flex-direction: column-reverse;
-    max-width: 95%;
+    width: 95%;
     gap: 25px;
   }
 
   .campus img {
-    max-width: 95%;
+    width: 95%;
     height: 30vh;
     margin: auto;
   }
 
   .our-campus {
-    max-width: 100%;
+    width: 100%;
     padding: 0 10px;
   }
 
@@ -1633,19 +1633,19 @@ textarea {
 
   .advanced-program {
     flex-direction: column-reverse;
-    max-width: 95%;
+    width: 95%;
     gap: 25px;
     padding: 15px;
   }
 
   .advanced-program img {
-    max-width: 100%;
+    width: 100%;
     height: 30vh;
     margin: auto;
   }
 
   .advanced-placement-program {
-    max-width: 100%;
+    width: 100%;
     align-items: center;
     text-align: center;
   }
@@ -1661,7 +1661,7 @@ textarea {
   }
 
   .box-advanced-placement {
-    max-width: 250px;
+    width: 250px;
   }
 
   .box-advanced-placement span {
@@ -1669,7 +1669,7 @@ textarea {
   }
 
   .box-activities {
-    max-width: 100%;
+    width: 100%;
   }
 
   .box-activities img {
@@ -1681,13 +1681,13 @@ textarea {
   .students-say .boxes {
     flex-direction: column;
     align-items: center;
-    max-width: 95%;
+    width: 95%;
     gap: 20px;
   }
 
   .box-events,
   .box-events1 {
-    max-width: 100%;
+    width: 100%;
     padding: 15px;
   }
 
@@ -1709,7 +1709,7 @@ textarea {
 
   .box-faculty,
   .box-faculty1 {
-    max-width: 100%;
+    width: 100%;
     max-width: 350px;
   }
 
@@ -1725,7 +1725,7 @@ textarea {
 
   .box-reviews,
   .box-reviews1 {
-    max-width: 100%;
+    width: 100%;
     max-width: 350px;
     padding: 15px;
   }
@@ -1733,7 +1733,7 @@ textarea {
   .box-reviews img,
   .box-reviews1 img {
     height: 30vh;
-    max-width: 30vh;
+    width: 30vh;
     border-radius: 50%;
     margin: 0 auto;
   }
@@ -1766,14 +1766,14 @@ textarea {
   }
 
   #email {
-    max-width: 100%;
+    width: 100%;
     max-width: 300px;
     padding: 12px;
     margin: auto;
   }
 
   #btn-subscribe {
-    max-width: 150px;
+    width: 150px;
     padding: 12px 15px;
     margin: auto;
   }
@@ -1786,7 +1786,7 @@ textarea {
 
   .get-in-touch,
   .send-us {
-    max-width: 100%;
+    width: 100%;
     padding: 15px;
   }
 
@@ -1882,7 +1882,7 @@ textarea {
   .dark-mode-toggle.mobile {
     bottom: 70px;
     right: 15px;
-    max-width: 45px;
+    width: 45px;
     height: 45px;
     font-size: 1rem;
   }
@@ -1911,7 +1911,7 @@ textarea {
   position: fixed;
   bottom: 75px;
   right: 20px;
-  max-width: 50px;
+  width: 50px;
   height: 50px;
   background-color: #4b5563;
   color: white;
