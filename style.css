@@ -1148,7 +1148,6 @@ textarea {
   background-color: #1d4ed8;
 }
 
-/* MEDIA QUERIES */
 @media (min-width: 481px) and (max-width: 949px) {
   .content {
     background-attachment: scroll;
