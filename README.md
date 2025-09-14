@@ -1,208 +1,263 @@
 # RTHILAA High School :
 
-A modern, responsive website for RTHILAA High School built with HTML, CSS, and JavaScript. The website showcases the school's academic programs, faculty, student activities, and provides information for prospective students and families.
+A modern, responsive website for RTHILAA High School built with HTML5, CSS3, and JavaScript. The website showcases the school's academic programs, faculty, student activities, and provides comprehensive information for prospective students and families.
 
 ## 🎯 Live Demo : 
 
-🔗 [Rthilaa High School](https://rthilaa-high-school.netlify.app/)
+🔗 [Rthilaa High School](https://rth-high-school.netlify.app/)
 
 We would appreciate it if you decide to use this project. Please include credit when using it. Thank you! 🙏
 
 ## ✨ Features :
 
-- **Responsive Design**: Fully responsive layout that works on desktop, tablet, and mobile devices
-- **Modern UI/UX**: Clean, professional design with smooth animations and transitions
-- **Interactive Elements**: Animated sections, hover effects, and dynamic content loading
-- **Accessibility**: Semantic HTML structure and keyboard navigation support
-- **Performance Optimized**: Efficient CSS and JavaScript for fast loading times
+- **Fully Responsive Design**: Optimized for desktop, tablet, and mobile devices with three breakpoints
+- **Modern UI/UX**: Clean, professional design with smooth AOS animations and CSS transitions
+- **Interactive Elements**: Dynamic content loading, hover effects, and smooth scrolling
+- **Dark Mode Support**: Toggle between light and dark themes with persistent user preference
+- **Accessibility Features**: Semantic HTML, keyboard navigation, and screen reader support
+- **Performance Optimized**: Efficient CSS/JS, lazy-loaded animations, and optimized images
+- **Cross-Browser Compatible**: Works on Chrome, Firefox, Safari, Edge, and mobile browsers
 
-## 🏗️ Sections :
+## 🏗️ Website Sections :
 
-### 🏠 Home
-- Hero section with animated typing effect
-- Call-to-action buttons for quick navigation
+### 🏠 **Hero Section**
+- Animated typing effect for main heading
+- Floating text animation
+- Call-to-action buttons with pulse effects
+- Fixed background parallax
 
-### ℹ️ About
-- School mission and achievements
-- Campus facilities overview with interactive features
-- Key statistics and community information
+### ℹ️ **About Us**
+- School mission, achievements, and community stats
+- Interactive campus facilities overview
+- Animated statistics and feature highlights
+- Image gallery with hover effects
 
-### 📚 Academics
-- Academic program highlights (STEM, Arts, Humanities, Athletics)
-- Advanced Placement (AP) program details
-- Interactive statistics display
+### 📚 **Academic Programs**
+- STEM, Arts, Humanities, and Athletics programs
+- Advanced Placement (AP) program showcase
+- Interactive statistics display with count-up animations
+- Flip card animations for program categories
 
-### 🎯 Activities
-- Student clubs and organizations
-- Athletic programs
+### 🎯 **Student Activities**
+- 40+ clubs and organizations
+- 15 varsity sports programs
 - Performing arts showcase
+- Image galleries with smooth transitions
 
-### 📅 Events
-- Upcoming school events calendar
-- Expandable event listings
-- Event details and registration links
+### 📅 **Events Calendar**
+- Upcoming school events with expandable listings
+- Date/time formatting and event details
+- "View All Events" toggle functionality
+- Responsive event cards
 
-### 👩‍🏫 Faculty
-- Faculty member profiles with photos
+### 👩‍🏫 **Faculty Directory**
+- Faculty profiles with photos and specializations
 - Department-wise organization
-- Expandable faculty directory
+- Expandable directory with smooth animations
+- Hover effects on faculty cards
 
-### 💬 Student Reviews
-- Student testimonials with ratings
-- Photo galleries of student life
-- Interactive review system
+### 💬 **Student Testimonials**
+- Student reviews with star ratings
+- Photo galleries showcasing student life
+- Expandable testimonials section
+- Interactive rating system
 
-### 📧 Contact
-- Contact form with validation
+### 📧 **Newsletter Signup**
+- Email subscription form with validation
+- Privacy-focused messaging
+- Responsive form design
+
+### 📞 **Contact Section**
+- Contact form with client-side validation
 - School location and contact information
 - Social media integration
-- Newsletter subscription
+- Interactive contact cards
 
-## 🛠️ Technologies Used :
+## 🛠️ Technologies & Libraries :
 
-- **HTML5**: Semantic markup and structure
+### Core Technologies :
+- **HTML5**: Semantic markup, accessibility features
 - **CSS3**: 
-  - Flexbox and Grid layouts
-  - CSS animations and transitions
+  - Flexbox and CSS Grid layouts
+  - CSS custom properties (variables)
+  - Keyframe animations and transitions
   - Media queries for responsive design
-  - Custom properties (CSS variables)
 - **JavaScript (ES6+)**:
-  - DOM manipulation
-  - Event handling
+  - DOM manipulation and event handling
   - Dynamic content loading
+  - Local storage for dark mode preference
   - Smooth scrolling functionality
-- **External Libraries**:
-  - [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/) - Scroll animations
-  - [Font Awesome](https://fontawesome.com/) - Icons
-  - [Google Fonts](https://fonts.google.com/) - Typography (Roboto, Work Sans)
 
-## 📁 File Structure :
+### External Libraries
+- **[AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)** - Scroll-triggered animations
+- **[Font Awesome 6.7.2](https://fontawesome.com/)** - Icon library
+- **[Google Fonts](https://fonts.google.com/)** - Roboto and Work Sans typography
+
+## 📁 Project Structure :
 
 ```
 rthilaa-high-school/
-├── index.html          # Main HTML file
-├── style.css           # Main stylesheet
-├── script.js           # JavaScript functionality
-├── README.md           # Project documentation
-└── IMG/                # Image assets
-    ├── ecole.jpg       # Hero background
-    ├── about.jpg       # About section image
-    ├── academics.jpg   # Academics section image
-    ├── clubs.jpg       # Clubs and activities
-    ├── Athletics.jpg   # Sports activities
-    ├── Arts.jpg        # Performing arts
-    └── [faculty-photos] # Faculty member photos
-    └── [student-photos] # Student testimonial photos
+├── index.html              # Main HTML file
+├── style.css               # Main stylesheet with dark mode support
+├── script.js               # JavaScript functionality
+├── README.md               # Project documentation
+└── IMG/                    # Image assets directory
+    ├── ecole.jpg           # Hero section background
+    ├── about.jpg           # About section image
+    ├── academics.jpg       # Academic programs image
+    ├── clubs.jpg           # Student clubs image
+    ├── Athletics.jpg       # Sports activities image
+    ├── Arts.jpg            # Performing arts image
+    ├── [faculty-photos]/   # Faculty member portraits
+    └── [student-photos]/   # Student testimonial photos
 ```
 
-## ⚙️ Installation & Setup :
+## 🚀 Quick Start :
 
-1. **Clone or download the repository**
-   ```bash
-   git clone [repository-url]
-   cd rthilaa-high-school
-   ```
+### Option 1: Direct Download
+1. Download or clone the repository
+2. Open `index.html` directly in your web browser
 
-2. **Open in a web browser**
-   - Simply open `index.html` in your preferred web browser
-   - Or use a local development server:
-     ```bash
-     # Using Python 3
-     python -m http.server 8000
-     
-     # Using Node.js (with http-server package)
-     npx http-server
-     ```
+### Option 2: Local Development Server
+```bash
+# Using Python 3
+python -m http.server 8000
 
-3. **View the website**
-   - Navigate to `http://localhost:8000` if using a local server
-   - Or directly open the `index.html` file in your browser
+# Using Node.js http-server
+npx http-server
 
-## 🎨 Customization :
+# Using PHP
+php -S localhost:8000
+```
 
-### Colors
-The website uses CSS custom properties for easy color customization. Main colors are defined in the `:root` selector:
+Then navigate to `http://localhost:8000`
 
-- Primary Blue: `#2563eb`
-- Secondary Blue: `#1d4ed8`
-- Background Gray: `#f9fafb`
-- Text Gray: `#4b5563`
+## 🎨 Customization Guide :
 
-### Content
-- Update school information in `index.html`
-- Replace images in the `IMG/` folder with your school's photos
-- Modify contact information in the contact section
-- Update social media links in the footer
+### Color Scheme
+The website uses CSS custom properties for easy theming:
 
-### Styling
-- Customize animations in `style.css`
-- Adjust responsive breakpoints for different screen sizes
-- Modify font families and sizes as needed
+```css
+:root {
+  --primary-blue: #2563eb;
+  --secondary-blue: #1d4ed8;
+  --background-gray: #f9fafb;
+  --text-gray: #4b5563;
+  --success-green: #10b981;
+  --warning-yellow: #f59e0b;
+}
+```
 
-## 🌐 Browser Support :
+### Content Updates
+- **School Information**: Update text content in `index.html`
+- **Images**: Replace files in the `IMG/` directory (maintain aspect ratios)
+- **Contact Details**: Modify contact section and footer information
+- **Social Media**: Update social media links in contact and footer sections
+- **Events**: Update the events section with current school events
 
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## ⚡ Performance Features :
-
-- Optimized CSS with efficient selectors
-- Lazy loading animations with AOS
-- Compressed and optimized images
-- Minimal external dependencies
-- Efficient JavaScript with event delegation
+### Styling Modifications
+- **Animations**: Customize AOS settings in `script.js`
+- **Responsive Breakpoints**: Modify media queries in `style.css`
+- **Typography**: Update Google Fonts imports and CSS font families
+- **Layout**: Adjust CSS Grid and Flexbox properties
 
 ## 📱 Responsive Design :
 
-The website includes three responsive breakpoints:
+### Breakpoints
+- **Desktop**: 950px and above
+- **Tablet**: 481px - 949px
+- **Mobile**: 480px and below
 
-- **Desktop**: > 949px
-- **Tablet**: 481px - 949px  
-- **Mobile**: < 480px
-
-Each breakpoint includes optimized layouts, font sizes, and interaction patterns.
+### Mobile Features
+- Hamburger navigation menu
+- Touch-friendly buttons and forms
+- Optimized image sizes
+- Collapsible content sections
 
 ## ♿ Accessibility Features :
 
-- Semantic HTML structure
-- Alt text for images
+- Semantic HTML5 structure
+- Alt text for all images
 - Keyboard navigation support
-- High contrast color scheme
+- High contrast color schemes
 - Screen reader friendly markup
 - Focus indicators for interactive elements
+- ARIA labels for complex components
 
-## 🧪 Development Notes :
+## ⚡ Performance Features
 
-### JavaScript Features
-- Mobile-friendly hamburger menu
-- Expandable content sections (Events, Faculty, Reviews)
-- Smooth scroll-to-top functionality
-- Form handling and validation
-- AOS animation initialization
+- Optimized CSS with efficient selectors
+- Lazy-loaded animations with AOS
+- Compressed and optimized images
+- Minimal external dependencies
+- Efficient JavaScript with event delegation
+- CSS and JS minification ready
 
-### CSS Features
-- CSS Grid and Flexbox layouts
-- Smooth transitions and animations
-- Custom hover effects
-- Mobile-first responsive design
-- CSS transforms for interactive elements
+## 🌙 Dark Mode Implementation :
+
+The website includes a comprehensive dark mode feature:
+
+- **Toggle Buttons**: Desktop header and mobile floating button
+- **Persistent Preference**: Uses localStorage to remember user choice
+- **Smooth Transitions**: All elements transition smoothly between modes
+- **Complete Coverage**: All sections and components support dark mode
+
+## 🧪 JavaScript Features :
+
+### Core Functionality
+- **Mobile Menu**: Hamburger navigation with smooth transitions
+- **Expandable Sections**: Events, Faculty, and Reviews sections
+- **Scroll to Top**: Smooth scrolling functionality
+- **Form Handling**: Client-side form validation
+- **Dark Mode**: Theme toggle with localStorage persistence
+- **AOS Integration**: Scroll animations with responsive settings
+
+### Event Handlers
+- Window scroll events for buttons visibility
+- Click handlers for expandable content
+- Form submission handling
+- Responsive navigation toggle
+
+## 🌐 Browser Support :
+
+### Desktop Browsers
+- Chrome 70+ (recommended)
+- Firefox 65+
+- Safari 12+
+- Edge 79+
+
+### Mobile Browsers
+- iOS Safari 12+
+- Chrome Mobile 70+
+- Samsung Internet 10+
+
+## 📈 SEO Optimization :
+
+- Semantic HTML structure
+- Meta tags for description and viewport
+- Proper heading hierarchy (H1-H4)
+- Alt text for images
+- Clean URL structure
+- Fast loading times
 
 ## 🤝 Contributing :
 
-To contribute to this project:
-
+### Development Guidelines
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/new-feature`)
-3. Make your changes
-4. Test across different devices and browsers
-5. Commit your changes (`git commit -am 'Add new feature'`)
-6. Push to the branch (`git push origin feature/new-feature`)
-7. Create a Pull Request
+3. Test across different devices and browsers
+4. Ensure accessibility standards are met
+5. Commit changes with descriptive messages
+6. Push to your branch and create a Pull Request
 
-## 📄 License :
+### Code Standards
+- Use semantic HTML5 elements
+- Follow BEM methodology for CSS classes
+- Write descriptive JavaScript comments
+- Maintain consistent indentation (2 spaces)
+- Test responsive design on multiple devices
+
+## 📝 License :
 
 This project is open source and available under the [MIT License](LICENSE).
 
@@ -210,15 +265,40 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Developed by:** [ANASS EL HARAZI](https://www.instagram.com/a.elharazi/)
 
-## 📞 Contact :
+### Skills Demonstrated
+- Responsive Web Design
+- CSS Grid & Flexbox
+- JavaScript DOM Manipulation
+- Cross-browser Compatibility
+- Performance Optimization
+- Accessibility Implementation
 
-For questions or support regarding this website:
+## 📞 Contact & Support :
 
-- **School**: RTHILAA High School
+### School Contact
+- **Institution**: RTHILAA High School
 - **Email**: info@rthilaahigh.edu
 - **Phone**: (123) 456-7890
-- **👨‍💻 Developer**: [ANASS EL HARAZI](https://www.instagram.com/a.elharazi/)
+- **Address**: 123 Street, City, Country
+
+### Developer Contact 
+- **Portfolio**: [ANASS EL HARAZI](https://www.instagram.com/a.elharazi/)
+- **Social**: [@a.elharazi](https://www.instagram.com/a.elharazi/)
+
+## 🔄 Version History :
+
+- **v1.0.0** - Initial release with core functionality
+- **Current** - Enhanced responsive design, dark mode, and accessibility features
+
+## 📚 Additional Resources :
+
+- [AOS Animation Library Documentation](https://michalsnik.github.io/aos/)
+- [Font Awesome Icon Reference](https://fontawesome.com/icons)
+- [CSS Grid Complete Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Web Accessibility Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 
 ---
 
-*© 2025 RTHILAA High School. All rights reserved.*
+**© 2025 RTHILAA High School. All rights reserved.**
+
+*Built with ❤️ by [ANASS EL HARAZI](https://www.instagram.com/a.elharazi/)*
