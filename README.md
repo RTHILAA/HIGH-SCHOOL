@@ -75,7 +75,7 @@ We would appreciate it if you decide to use this project. Please include credit 
 
 ## 🛠️ Technologies & Libraries :
 
-### Core Technologies :
+### Core Technologies 
 - **HTML5**: Semantic markup, accessibility features
 - **CSS3**: 
   - Flexbox and CSS Grid layouts
