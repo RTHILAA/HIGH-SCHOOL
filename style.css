@@ -41,6 +41,7 @@ header {
   height: 10vh;
   width: 90%;
   margin: auto;
+  position: relative;
 }
 
 .navbar ul {
@@ -48,6 +49,9 @@ header {
   list-style: none;
   gap: 20px;
   font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .navbar li a {
@@ -80,6 +84,7 @@ header {
   cursor: pointer;
   display: none;
   transition: 0.3s;
+  color: #2563eb;
 }
 
 #bars:hover {
@@ -198,7 +203,6 @@ header {
 }
 
 .about {
-  margin: 50px 0;
   padding: 30px 0;
 }
 
@@ -500,7 +504,6 @@ header {
 }
 
 .academics {
-  margin: 50px 0;
   background-color: #f9fafb;
   padding: 30px 0;
 }
@@ -586,6 +589,10 @@ header {
   }
 }
 
+.activities {
+  padding: 30px 0;
+}
+
 .box-activities {
   background-color: #f9fafb;
   border-radius: 10px;
@@ -627,7 +634,6 @@ header {
 
 .events {
   background-color: #eff6ff;
-  margin: 50px 0;
   padding: 30px 0;
 }
 
@@ -707,7 +713,6 @@ header {
 }
 
 .faculty {
-  margin: 50px 0;
   background-color: #f9fafb;
   padding: 30px 0;
 }
@@ -763,7 +768,6 @@ header {
 
 .students-say {
   background-color: #ffffff;
-  margin: 50px 0;
   padding: 30px 0;
 }
 
@@ -828,7 +832,6 @@ header {
 }
 
 .stay-updated {
-  margin: 50px 0;
   background-color: #377bf2;
   color: white;
   padding: 30px 0;
@@ -877,7 +880,6 @@ form {
 }
 
 .contact-us {
-  margin: 50px 0;
   padding: 30px 0;
 }
 
@@ -1106,31 +1108,31 @@ textarea {
 }
 
 .scroll-top-btn {
-    position: fixed;
-    bottom: 7px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #2563eb;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
-    z-index: 1000;
+  position: fixed;
+  bottom: 7px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+  z-index: 1000;
 }
 
 .scroll-top-btn.show {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .scroll-top-btn:hover {
-    background-color: #1d4ed8;
+  background-color: #1d4ed8;
 }
 
 @media (min-width: 481px) and (max-width: 949px) {
@@ -1143,7 +1145,7 @@ textarea {
   }
 
   .navbar {
-    height: 7vh;
+    height: 10vh;
   }
 
   .navbar ul {
@@ -1334,7 +1336,7 @@ textarea {
     width: 100%;
   }
 
-    .get-in-touch h4,
+  .get-in-touch h4,
   .send-us h4,
   .follow-us h4 {
     text-align: center;
@@ -1364,7 +1366,7 @@ textarea {
 
   .stay-updated form {
     align-items: center;
-   }
+  }
 
   #btn-subscribe {
     width: 200px;
@@ -1387,14 +1389,36 @@ textarea {
   }
 }
 
+@media (min-width: 950px) {
+  .dark-mode-toggle.mobile {
+    display: none;
+  }
+
+  .dark-mode-toggle:not(.mobile) {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 949px) {
+  .dark-mode-toggle:not(.mobile) {
+    display: none;
+  }
+
+  .dark-mode-toggle.mobile {
+    display: flex;
+  }
+}
+
 @media (max-width: 768px) {
-    .scroll-top-btn {
-        bottom: 20px;
-        right: 20px;
-        width: 50px;
-        height: 50px;
-        font-size: 16px;
-    }
+  .scroll-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1742,7 +1766,8 @@ textarea {
     font-size: 16px;
   }
 
-  .send-us h4 , .get-in-touch h4  {
+  .send-us h4,
+  .get-in-touch h4 {
     text-align: center;
   }
 
@@ -1823,4 +1848,184 @@ textarea {
   .copyright a {
     font-size: 12px;
   }
+
+  .dark-mode-toggle.mobile {
+    bottom: 70px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+}
+
+.dark-mode-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  color: #4b5563;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-mode-toggle:hover {
+  background-color: rgba(75, 85, 99, 0.1);
+  transform: scale(1.1);
+}
+
+.dark-mode-toggle.mobile {
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #4b5563;
+  color: white;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode-toggle.mobile.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dark-mode-toggle.mobile:hover {
+  background-color: #374151;
+}
+
+body.dark-mode {
+  background-color: #000000;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #000000;
+}
+
+body.dark-mode .navbar h3 a,
+body.dark-mode .navbar li a,
+body.dark-mode .feature p {
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar li a:hover {
+  color: #2563eb;
+}
+
+body.dark-mode .box-about,
+body.dark-mode .box-academics,
+body.dark-mode .box-activities,
+body.dark-mode .box-events,
+body.dark-mode .box-events1,
+body.dark-mode .box-faculty,
+body.dark-mode .box-faculty1,
+body.dark-mode .box-reviews,
+body.dark-mode .box-reviews1,
+body.dark-mode .get-in-touch,
+body.dark-mode .send-us {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .box-events .title-event,
+body.dark-mode .box-events1 .title-event,
+body.dark-mode .get-in-touch h4,
+body.dark-mode .send-us h4 {
+  color: #e0e0e0;
+}
+
+body.dark-mode .box-about p,
+body.dark-mode .box-academics p,
+body.dark-mode .box-activities p,
+body.dark-mode .box-events p,
+body.dark-mode .box-events1 p,
+body.dark-mode .box-faculty p,
+body.dark-mode .box-faculty1 p,
+body.dark-mode #paragraph-about,
+body.dark-mode #paragraph-academic,
+body.dark-mode #paragraph-activities,
+body.dark-mode #paragraph-faculty,
+body.dark-mode #paragraph-contact,
+body.dark-mode .our-campus p,
+body.dark-mode .advanced-placement-program p {
+  color: #b0b0b0;
+}
+
+body.dark-mode .about,
+body.dark-mode .academics,
+body.dark-mode .advanced-program,
+body.dark-mode .activities,
+body.dark-mode .events,
+body.dark-mode .faculty,
+body.dark-mode .students-say,
+body.dark-mode .stay-updated,
+body.dark-mode .contact-us {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .stay-updated .border {
+  background-color: #2563eb;
+}
+
+body.dark-mode .footer {
+  background-color: #000000;
+}
+
+body.dark-mode .box-advanced-placement {
+  background-color: #2d2d2d;
+}
+
+body.dark-mode .advanced-placement-program h4 {
+  color: #d6d6d6;
+}
+
+body.dark-mode .box-advanced-placement p {
+  color: #b0b0b0;
+}
+
+body.dark-mode .footer h4 {
+  color: #e0e0e0;
+}
+
+body.dark-mode .footer p,
+body.dark-mode .footer li a {
+  color: #b0b0b0;
+}
+
+body.dark-mode .footer li a:hover {
+  color: #2563eb;
+}
+
+body.dark-mode .send-us input,
+body.dark-mode .send-us textarea,
+body.dark-mode #email {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border-color: #3d3d3d;
+}
+
+body.dark-mode .dark-mode-toggle {
+  color: #facc15;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+  background-color: rgba(250, 204, 21, 0.1);
+}
+
+body.dark-mode .dark-mode-toggle.mobile {
+  color: #121212;
+  background-color: #facc15;
+}
+
+body.dark-mode .dark-mode-toggle.mobile:hover {
+  background-color: #eab308;
 }
