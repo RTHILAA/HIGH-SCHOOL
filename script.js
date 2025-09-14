@@ -101,3 +101,18 @@ function updateDarkModeIcons(isDarkMode) {
 
 darkModeToggle.addEventListener("click", toggleDarkMode);
 darkModeToggleMobile.addEventListener("click", toggleDarkMode);
+
+// Add this to your existing JavaScript
+function preventHorizontalScroll() {
+  if (window.innerWidth <= 949) {
+    document.body.style.overflowX = 'hidden';
+    document.documentElement.style.overflowX = 'hidden';
+  } else {
+    document.body.style.overflowX = '';
+    document.documentElement.style.overflowX = '';
+  }
+}
+
+// Run on load and resize
+window.addEventListener('load', preventHorizontalScroll);
+window.addEventListener('resize', preventHorizontalScroll);
