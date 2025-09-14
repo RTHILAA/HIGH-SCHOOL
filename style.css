@@ -10,11 +10,11 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #2563eb #ffffff;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Work Sans", serif;
-  overflow-x: hidden;
 }
 
 header {
