@@ -11,78 +11,38 @@ document.addEventListener('DOMContentLoaded', function() {
 let bars = document.getElementById('bars');
 let navbar = document.querySelector('.navbar ul');
 
-let btnEvents = document.getElementById('btn-events');
-let boxEvents = document.querySelectorAll('.box-events1');
-
-let btnFaculty = document.getElementById('btn-faculty');
-let boxFaculty = document.querySelectorAll('.box-faculty1');
-
-let btnReviews = document.getElementById('btn-reviews');
-let boxReviews = document.querySelectorAll('.box-reviews1');
-
 let scrollToTopBtn = document.getElementById('scrollToTop');
 
+const darkModeToggle = document.getElementById('darkModeToggle');
+const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
+const body = document.body;
 
-bars.addEventListener("click" , () => {
+
+bars.addEventListener("click", () => {
     if (navbar.style.display === "none" || navbar.style.display === "") {
-        bars.classList.remove('fa-bars');
-        bars.classList.add('fa-xmark');
+        bars.classList.replace('fa-bars', 'fa-xmark');
         navbar.style.display = "flex";
-    }
-    else {
-        bars.classList.remove('fa-xmark');
-        bars.classList.add('fa-bars');
+    } else {
+        bars.classList.replace('fa-xmark', 'fa-bars');
         navbar.style.display = "none";
     }
-})
-
-btnEvents.addEventListener("click", () => {
-     if ([...boxEvents].some(boxE => boxE.style.display === "none" || boxE.style.display === "")) {
-        boxEvents.forEach(boxE => {
-            boxE.style.display = "flex";
-            btnEvents.textContent = "View Less Events";
-        });
-        
-    } else {
-        boxEvents.forEach(boxE => {
-            boxE.style.display = "none";
-            btnEvents.textContent = "View All Events";
-        });
-       
-    }
 });
 
-btnFaculty.addEventListener("click", () => {
-     if ([...boxFaculty].some(boxF => boxF.style.display === "none" || boxF.style.display === "")) {
-        boxFaculty.forEach(boxF => {
-            boxF.style.display = "flex";
-            btnFaculty.textContent = "View Less Faculty";
-        });
-    
-    } else {
-        boxFaculty.forEach(boxF => {
-            boxF.style.display = "none";
-            btnFaculty.textContent = "View All Faculty";
-        });
-        
-    }
-});
+function setupToggle(btnId, boxesSelector, showText, hideText) {
+    const btn = document.getElementById(btnId);
+    const boxes = document.querySelectorAll(boxesSelector);
 
-btnReviews.addEventListener("click", () => {
-     if ([...boxReviews].some(boxR => boxR.style.display === "none" || boxR.style.display === "")) {
-        boxReviews.forEach(boxR => {
-            boxR.style.display = "flex";
-            btnReviews.textContent = "View Less Reviews";
-        });
-        
-    } else {
-        boxReviews.forEach(boxR => {
-            boxR.style.display = "none";
-            btnReviews.textContent = "View All Reviews";
-        });
-        
-    }
-});
+    btn.addEventListener("click", () => {
+        const anyHidden = [...boxes].some(box => box.style.display === "none" || box.style.display === "");
+        boxes.forEach(box => box.style.display = anyHidden ? "flex" : "none");
+        btn.textContent = anyHidden ? hideText : showText;
+    });
+}
+
+setupToggle('btn-events', '.box-events1', 'View All Events', 'View Less Events');
+setupToggle('btn-faculty', '.box-faculty1', 'View All Faculty', 'View Less Faculty');
+setupToggle('btn-reviews', '.box-reviews1', 'View All Reviews', 'View Less Reviews');
+
 
 
 window.addEventListener('scroll', () => {
@@ -99,3 +59,31 @@ scrollToTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+darkModeToggleMobile.classList.add('show');
+
+if (localStorage.getItem('darkMode') === 'enabled') {
+    body.classList.add('dark-mode');
+    updateDarkModeIcons(true);
+}
+
+function toggleDarkMode() {
+    body.classList.toggle('dark-mode');
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+        updateDarkModeIcons(true);
+    } else {
+        localStorage.setItem('darkMode', 'disabled');
+        updateDarkModeIcons(false);
+    }
+}
+
+function updateDarkModeIcons(isDarkMode) {
+  document.querySelectorAll('.dark-mode-toggle i').forEach(icon => {
+    icon.classList.toggle('fa-sun', isDarkMode);
+    icon.classList.toggle('fa-moon', !isDarkMode);
+  });
+}
+
+darkModeToggle.addEventListener('click', toggleDarkMode);
+darkModeToggleMobile.addEventListener('click', toggleDarkMode);
