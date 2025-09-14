@@ -184,7 +184,7 @@ The website uses CSS custom properties for easy theming:
 - Focus indicators for interactive elements
 - ARIA labels for complex components
 
-## ⚡ Performance Features
+## ⚡ Performance Features :
 
 - Optimized CSS with efficient selectors
 - Lazy-loaded animations with AOS
