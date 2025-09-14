@@ -1,4 +1,4 @@
-# RTHILAA High School :
+# RTHILAA High School V2 :
 
 A modern, responsive website for RTHILAA High School built with HTML5, CSS3, and JavaScript. The website showcases the school's academic programs, faculty, student activities, and provides comprehensive information for prospective students and families.
 
